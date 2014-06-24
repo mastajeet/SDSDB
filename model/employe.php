@@ -1,8 +1,8 @@
 <?php
 
-class employes{
+class employe{
 
-   #Classe qui comprends les listes d'employés
+   #Classe qui comprends les listes d'employï¿½s
         
         
 }
