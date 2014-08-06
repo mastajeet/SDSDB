@@ -10,20 +10,18 @@ function StringArrayToString($VarArray,$Separator=","){
   
 }
 
-function PushArrayIntoInfo($Class, $Model, $Data){
+function PushArrayIntoInfo($Class, &$Model, $Data){
 
     foreach($Data as $k=>$v){
     
         if (array_key_exists($k,$Model)){
-            $Model[$k] = $v;
+           $Model[$k] = $v;
         }else{
             trigger_error("No Such item (".$k.") in model:".$Class); 
         }
     
     }
-    
 }
-
 
 Function GenerateUpdateStatement($Class, $Model, $FieldType){
     
@@ -90,5 +88,6 @@ function GenerateInsertStatement($Class, $Model, $FieldType){
     $Statement .= substr($Field, 0,-1).") VALUES(".substr($Values,0,-2).")";
     return $Statement;
 }
+
 
 ?>

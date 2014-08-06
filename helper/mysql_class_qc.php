@@ -9,9 +9,9 @@
 class SqlClass
 {
 	var $server = "localhost";
-	var $database = "qcnat_sds_qc";
-	var $username = "qcnat_cyberyder";
-	var $password = "chille";
+	var $database = "sdsdb";
+	var $username = "root";
+	var $password = "chille69";
 	var $debug = 0;
 	var $show_errors = true;
 	var $logfile = "./mysql.log";
